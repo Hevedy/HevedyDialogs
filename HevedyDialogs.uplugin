@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Hevedy Dialogs",
+	"Description": "Editor and Runtime Dialogs using TinyFileDialogs based on Doublezer0 implementation for UE4.",
+	"Category": "IO",
+	"CreatedBy": "David Hevedy Palacios",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "HevedyDialogs",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault",
+			"WhitelistPlatforms" :
+			[
+				"Win64"
+			]
+		}
+		
+	]
+}
