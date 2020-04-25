@@ -19,16 +19,16 @@ int32 UDialogsBlueprint::ShowMessageBoxTFD( FString _Title, FString _Message, ET
 	FString aDialogType;
 	switch (_DialogType)
 	{
-		case OK:
+		case ETinyFileDialogMessageType::OK:
 			aDialogType = "ok";
 			break;
-		case OKCANCEL:
+		case ETinyFileDialogMessageType::OKCANCEL:
 			aDialogType = "okcancel";
 			break;
-		case YESNO:
+		case ETinyFileDialogMessageType::YESNO:
 			aDialogType = "yesno";
 			break;
-		case YESNOCANCEL:
+		case ETinyFileDialogMessageType::YESNOCANCEL:
 			aDialogType = "yesnocancel";
 			break;
 		default:
@@ -38,16 +38,16 @@ int32 UDialogsBlueprint::ShowMessageBoxTFD( FString _Title, FString _Message, ET
 	FString aIconType;
 	switch (_IconType)
 	{
-		case INFO:
+		case ETinyFileDialogIconType::INFO:
 			aIconType = "info";
 			break;
-		case WARNING:
+		case ETinyFileDialogIconType::WARNING:
 			aIconType = "warning";
 			break;
-		case ERROR:
+		case ETinyFileDialogIconType::ERROR:
 			aIconType = "error";
 			break;
-		case QUESTION:
+		case ETinyFileDialogIconType::QUESTION:
 			aIconType = "question";
 			break;
 		default:
@@ -72,16 +72,16 @@ int32 UDialogsBlueprint::ShowMessageBox( const ETinyFileDialogMessageType _Type,
 #if WITH_EDITOR
 	EAppMsgType::Type type = EAppMsgType::Type::OkCancel;
 	switch ( _Type ) {
-		case OK:
+		case ETinyFileDialogMessageType::OK:
 			type = EAppMsgType::Type::Ok;
 			break;
-		case OKCANCEL:
+		case ETinyFileDialogMessageType::OKCANCEL:
 			type = EAppMsgType::Type::OkCancel;
 			break;
-		case YESNO:
+		case ETinyFileDialogMessageType::YESNO:
 			type = EAppMsgType::Type::YesNo;
 			break;
-		case YESNOCANCEL:
+		case ETinyFileDialogMessageType::YESNOCANCEL:
 			type = EAppMsgType::Type::YesNoCancel;
 			break;
 		default:

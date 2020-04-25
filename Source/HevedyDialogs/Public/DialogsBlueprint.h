@@ -9,8 +9,7 @@
 #include "DialogsBlueprint.generated.h"
 
 UENUM(BlueprintType)
-enum ETinyFileDialogMessageType
-{
+enum class ETinyFileDialogMessageType : uint8 {
 	OK			UMETA(DisplayName = "OK"),
 	OKCANCEL	UMETA(DisplayName = "OK / CANCEL"),
 	YESNO		UMETA(DisplayName = "YES / NO"),
@@ -18,8 +17,7 @@ enum ETinyFileDialogMessageType
 };
 
 UENUM(BlueprintType)
-enum ETinyFileDialogIconType
-{
+enum class ETinyFileDialogIconType : uint8 {
 	INFO		UMETA(DisplayName = "Info"),
 	WARNING		UMETA(DisplayName = "OK / Cancel"),
 	ERROR		UMETA(DisplayName = "Yes / No"),
@@ -27,8 +25,7 @@ enum ETinyFileDialogIconType
 };
 
 UENUM(BlueprintType)
-enum ETinyFileDialogInputType
-{
+enum class ETinyFileDialogInputType : uint8 {
 	PLAINTEXT	UMETA(DisplayName = "Plain Text"),
 	PASSWORD 	UMETA(DisplayName = "Password")
 };
